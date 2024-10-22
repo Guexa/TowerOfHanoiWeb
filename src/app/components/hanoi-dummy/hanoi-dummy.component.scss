@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #ffccbc);
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  position: relative; /* Para posicionar la situación hipotética a la derecha */
+
+  .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  canvas {
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+
+  .solution-box {
+    margin-top: 20px; /* Aumentar margen superior */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    max-height: 300px;
+    overflow-y: auto;
+
+    h3 {
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 0; /* Sin margen */
+    }
+  }
+
+  .hypothetical-situation {
+    position: absolute; /* Posición absoluta para colocar a la derecha */
+    top: 20px; /* Espacio desde la parte superior */
+    right: 20px; /* Espacio desde el lado derecho */
+    width: 250px; /* Ancho fijo para la sección */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    
+    h3 {
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 0; /* Sin margen */
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}

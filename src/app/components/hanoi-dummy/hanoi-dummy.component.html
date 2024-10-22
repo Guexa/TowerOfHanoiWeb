@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="title">Tower of Hanoi</h1>
+  <canvas #canvas width="600" height="400"></canvas>
+  <div class="controls">
+    <label for="diskCount">Disks:</label>
+    <input type="number" id="diskCount" [(ngModel)]="diskCount" min="3" max="8"
+      (change)="initializeTowers(); getMinMoves()" />
+    <span>Moves: {{ moves }}</span>
+    <button (click)="restart()">Restart</button>
+    <button (click)="showSolution()">Solution</button>
+    <span>Minimum Moves: {{ minMoves }}</span>
+  </div>
+
+  <div *ngIf="showSolutionText" class="solution-box">
+    <h3>Solution:</h3>
+    <p>{{ currentStep }}</p>
+    <button (click)="nextStep()" [disabled]="!hasNextStep()">Next Step</button>
+  </div>
+
+  <div class="hypothetical-situation">
+    <h3>Hypothetical Situation:</h3>
+    <p>Imagining that you make one move per second, this is how long it would take you to solve the Tower of Hanoi:</p>
+    <ul>
+      <li *ngFor="let item of hypotheticalTimes">
+        For {{ item.disks }} disks: {{ item.moves }} moves, approximately {{ item.time }}.
+      </li>
+    </ul>
+  </div>
+</div>
