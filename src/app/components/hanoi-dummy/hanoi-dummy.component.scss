@@ -7,7 +7,7 @@
   background: linear-gradient(135deg, #e0f7fa, #ffccbc);
   color: #333;
   font-family: 'Arial', sans-serif;
-  position: relative; /* Para posicionar la situación hipotética a la derecha */
+  position: relative;
 
   .title {
     font-size: 3rem;
@@ -55,7 +55,7 @@
   }
 
   .solution-box {
-    margin-top: 20px; /* Aumentar margen superior */
+    margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -69,15 +69,15 @@
     }
 
     p {
-      margin: 0; /* Sin margen */
+      margin: 0;
     }
   }
 
   .hypothetical-situation {
-    position: absolute; /* Posición absoluta para colocar a la derecha */
-    top: 20px; /* Espacio desde la parte superior */
-    right: 20px; /* Espacio desde el lado derecho */
-    width: 250px; /* Ancho fijo para la sección */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -89,7 +89,7 @@
     }
 
     p {
-      margin: 0; /* Sin margen */
+      margin: 0;
     }
 
     ul {
